@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>کافی‌نتی محلوجی</title>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      font-family: 'Vazirmatn', sans-serif;
+      margin: 0;
+      background: linear-gradient(to right, #e0f7ff, #f0f8ff);
+      direction: rtl;
+      color: #222;
+    }
+    header {
+      background: linear-gradient(to left, #007acc, #005fa3);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    nav {
+      background: #004f83;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: bold;
+    }
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+    }
+    .card {
+      background: white;
+      border-radius: 1rem;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    }
+    .card h2 {
+      color: #005fa3;
+      margin-bottom: 1rem;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      padding: 0.5rem 0;
+      border-bottom: 1px dashed #ccc;
+      font-size: 1.1rem;
+    }
+    ul li i {
+      color: #007acc;
+      margin-left: 0.5rem;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 0.6rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 0.5rem;
+      font-family: inherit;
+    }
+    .contact-form button {
+      background: #007acc;
+      color: white;
+      border: none;
+      padding: 0.7rem 1.5rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .social-icons {
+      margin-top: 2rem;
+      text-align: center;
+    }
+    .social-icons a {
+      color: white;
+      background: #007acc;
+      padding: 0.6rem;
+      margin: 0 0.5rem;
+      border-radius: 50%;
+      text-decoration: none;
+    }
+    .map {
+      width: 100%;
+      height: 250px;
+      border-radius: 1rem;
+      border: none;
+    }
+    .quick-buttons {
+      position: fixed;
+      left: 20px;
+      bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 999;
+    }
+    .quick-buttons a {
+      background: #ff9900;
+      color: white;
+      padding: 0.8rem 1rem;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .quick-buttons a.whatsapp {
+      background: #25d366;
+    }
+  </style>
+</head>
+<body>
+
+  <header>کافی‌نتی محلوجی</header>
+
+  <nav>
+    <a href="#services">خدمات</a>
+    <a href="#comments">نظرات مشتریان</a>
+    <a href="#contact">تماس با ما</a>
+  </nav>
+
+  <main>
+    <section id="services" class="card">
+      <h2><i class="fas fa-tools"></i> خدمات ما</h2>
+      <ul>
+        <li><i class="fas fa-globe"></i> خدمات اینترنتی</li>
+        <li><i class="fas fa-edit"></i> ثبت‌نام‌های دولتی</li>
+        <li><i class="fas fa-print"></i> پرینت، اسکن و فتوکپی</li>
+        <li><i class="fas fa-passport"></i> ثبت نام کارت ملی و گذرنامه</li>
+      </ul>
+    </section>
+
+    <section id="comments" class="card">
+      <h2><i class="fas fa-comments"></i> نظرات مشتریان</h2>
+      <p>✦ خدمات سریع و باکیفیت ✦</p>
+      <p>✦ برخورد حرفه‌ای و خوش‌قولی ✦</p>
+      <p>✦ محیط تمیز و مجهز ✦</p>
+    </section>
+
+    <section id="contact" class="card contact-form">
+      <h2><i class="fas fa-phone"></i> تماس با ما</h2>
+      <form>
+        <input type="text" placeholder="نام شما" required />
+        <input type="email" placeholder="ایمیل" />
+        <textarea rows="4" placeholder="پیام شما"></textarea>
+        <button type="submit">ارسال پیام</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2><i class="fas fa-map-marker-alt"></i> موقعیت ما</h2>
+      <iframe class="map" src="https://maps.google.com/maps?q=اصفهان،%20گرکان%20شریعتی%20کوچه%20لاله&t=&z=15&ie=UTF8&iwloc=&output=embed"></iframe>
+    </section>
+
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-telegram"></i></a>
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </main>
+
+  <div class="quick-buttons">
+    <a href="tel:209367338420"><i class="fas fa-phone"></i> تماس سریع</a>
+    <a href="https://wa.me/989123456789" class="whatsapp"><i class="fab fa-whatsapp"></i> واتساپ</a>
+  </div>
+
+</body>
+</html>
